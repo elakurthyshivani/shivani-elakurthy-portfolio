@@ -44,12 +44,12 @@ function CardSkills(props) {
             <SkillCategory categoryName="Cloud"
                     skills="Amazon Web Services, Azure" 
                     skillClasses="skill-aws, skill-azure" />
-            <SkillCategory categoryName="Tools"
-                    skills="Git, Jira, JUnit, Selenium" 
-                    skillClasses="skill-git, skill-jira, skill-junit, skill-selenium" />
             <SkillCategory categoryName="CI/CD"
                     skills="Docker, Kubernetes, Jenkins" 
                     skillClasses="skill-docker, skill-kubernetes, skill-jenkins" />
+            <SkillCategory categoryName="Tools"
+                    skills="Git, Jira, JUnit, Selenium" 
+                    skillClasses="skill-git, skill-jira, skill-junit, skill-selenium" />
         </div>
     );
 }

@@ -73,7 +73,7 @@ function SectionFour() {
             <div className="w-100" style={{height: "10%"}}></div>
             <div className="bg-white-div position-absolute w-100"></div>
 
-            <ScrollToIcon tooltip="Scroll Down for FAQs" />
+            {/* <ScrollToIcon tooltip="Scroll Down for FAQs" /> */}
         </section>
     );
 }
