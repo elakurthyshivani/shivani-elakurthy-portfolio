@@ -1,0 +1,275 @@
+@import "Variables";
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+// Tags
+
+.html-tag, .html-tag-name   {
+    font-family: $code-font;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: rgb(26, 124, 223);
+}
+
+.tag-name  {
+    color: darkgoldenrod;
+    font-size: 1.2em;
+    font-weight: 200 !important;
+}
+
+.tag-current-role   {
+    color: mediumblue;
+}
+
+.tag-highest-degree, .tag-project-name {
+    color: blueviolet;
+}
+
+.tag-next-section   {
+    color: darkcyan;
+}
+
+.tag-about-me   {
+    color: deeppink;
+}
+
+.tag-professional-accomplishments, .tag-skills, .tag-certifications, 
+.tag-personal-projects   {
+    color: darkcyan;
+}
+
+.tag-accomplishment {
+    color: goldenrod;//mediumblue;
+}
+
+.tag-technologies, .tag-skill-category   {
+    color: lightcoral;//darkslateblue;//royalblue;
+}
+
+.html-attribute {
+    font-size: 0.9em;
+}
+
+.html-attribute-value  {
+    color: $gray-8;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+// Buttons
+
+.basic-button {
+    background-color: $primary-color;
+    align-items: center;
+    padding: 3% 4%;
+    border-radius: $border-radius;
+    box-shadow: $buttons-box-shadow;
+    z-index: 4;
+    cursor: pointer;
+    transition: $transition-secs;
+
+    a, button    {
+        color: $ternary-color;
+        text-decoration: none;
+        font-family: $code-font;
+        // font-size: 0.9em;
+        font-weight: bold;
+    }
+
+    &:hover  {
+        transform: $buttons-scale;
+        background-color: $primary-hover-color;
+        box-shadow: $buttons-hover-box-shadow;
+
+        a, svg, button   {
+            color: $secondary-color;
+        }
+    }
+}
+
+.basic-button button {
+    background: none;
+    border: 0px;
+}
+
+// Scroll To Icon
+
+.round-icon-container   {
+    display: inline-block;
+    cursor: pointer;
+    // bottom: 0px;
+    // right: 0px;
+}
+
+.round-icon  {
+    display: inline-block;
+    bottom: 48px;
+    right: 48px;
+    z-index: 5;
+    padding: 10px;
+    background-color: $primary-color;
+    box-shadow: $buttons-box-shadow;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    transition: $transition-secs;
+
+    svg {
+        color: $ternary-color !important;
+    }
+}
+
+.round-icon-container:hover {
+
+    .round-icon {
+        transform: $buttons-scale;
+        background-color: $primary-hover-color;
+        box-shadow: $buttons-hover-box-shadow;
+        
+        svg {
+            color: $secondary-color !important;
+        }
+    }
+}
+
+// Skills
+
+.skill-pill {
+    background-color: rgb(230, 249, 249);
+    border-radius: 75px;
+    padding: 4px 8px;
+    transition: 0.4s;
+
+    &:hover {
+        background-color: rgb(214, 238, 238);
+    }
+}
+
+.skill-value    {
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+.skill-amazon-dynamodb {
+    background: url("../images/amazon_dynamo_db.png");
+}
+
+.skill-aws {
+    background: url("../images/aws.png");
+}
+
+.skill-aws-elastic-beanstalk    {
+    background: url("../images/aws_elastic_beanstalk.png");
+}
+
+.skill-azure {
+    background: url("../images/azure.png");
+}
+
+.skill-azure-cosmos-db {
+    background: url("../images/azure_cosmos_db.png");
+}
+
+.skill-azure-functions  {
+    background: url("../images/azure_functions.png");
+} 
+
+.skill-azure-sql    {
+    background: url("../images/azure_sql.png");
+}
+
+.skill-bootstrap    {
+    background: url("../images/bootstrap.png");
+} 
+
+.skill-docker {
+    background: url("../images/docker.png");
+}
+
+.skill-flask    {
+    background: url("../images/flask.png");
+}
+
+.skill-gin {
+    background: url("../images/gin.png");
+}
+
+.skill-git {
+    background: url("../images/git.png");
+}
+
+.skill-go   {
+    background: url("../images/go.png");
+}
+
+.skill-java {
+    background: url("../images/java.png");
+}
+
+.skill-javascript {
+    background: url("../images/javascript.png");
+}
+
+.skill-jenkins {
+    background: url("../images/jenkins.png");
+}
+
+.skill-jira {
+    background: url("../images/jira.png");
+}
+
+.skill-jquery {
+    background: url("../images/jquery.png");
+}
+
+.skill-junit {
+    background: url("../images/junit.png");
+}
+
+.skill-kubernetes {
+    background: url("../images/kubernetes.png");
+}
+
+.skill-mysql {
+    background: url("../images/mysql.png");
+}
+
+.skill-php {
+    background: url("../images/php.png");
+}
+
+.skill-python   {
+    background: url("../images/python.png");
+}
+
+.skill-react    {
+    background: url("../images/react.png");
+} 
+
+.skill-selenium {
+    background: url("../images/selenium.png");
+}
+
+.skill-spark    {
+    background: url("../images/spark.png");
+} 
+
+.skill-spring {
+    background: url("../images/spring.png");
+}
+
+.skill-image    {
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 16px;
+    height: 16px;
+}
+
+// In-progress text
+
+.in-progress  {
+    color: $gray-8;
+    font-size: 0.85em;
+    font-weight: 500;
+}

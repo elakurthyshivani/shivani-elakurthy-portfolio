@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&display=swap');
+
+// Colors
+$gray-black: #2A2F28;
+$gray-5: #555;
+$gray-8: #888;
+// $gray-EF: #EFEFEF;
+
+$primary-color: #c13248;
+$primary-hover-color: #9c2c3d;
+$secondary-color: darkturquoise;
+$ternary-color: bisque;
+
+// All
+$border-radius: 4px;
+$box-shadow-card: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+$buttons-box-shadow: 4px 4px 2px $gray-8;
+$buttons-hover-box-shadow: 4px 4px 2px $gray-5;
+$buttons-scale: scale(1.05, 1.05);
+$code-font: 'Inconsolata' !important;
+$transition-secs: 0.4s;

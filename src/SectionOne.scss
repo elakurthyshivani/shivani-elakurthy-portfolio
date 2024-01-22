@@ -1,0 +1,45 @@
+@import "Variables";
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+#section-one {
+    background-color: navajowhite;
+    color: whitesmoke;
+}
+
+.scroll-to-icon {
+    color:white !important;
+}
+
+#photo-container    {
+    left: -8.34%;
+}
+
+#photo  {
+    background-image: url("../images/photo.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 10%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    z-index: 3;
+    box-shadow: 0 4px 8px 0 rgba(gray, 0.2), 0 6px 20px 0 rgba(gray, 0.19);
+}
+
+#basic-information  {
+    top: 0;
+    right:0;
+}
+
+#name   {
+    color: $primary-hover-color;
+    font-family: 'Pacifico';
+}
+
+.se-title  {
+    color: $gray-5;
+}
+
+.para-value    {
+    color: $gray-black;
+    font-size: 0.97em;
+}

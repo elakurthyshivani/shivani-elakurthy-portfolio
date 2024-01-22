@@ -1,0 +1,41 @@
+@import "Variables";
+
+#section-two    {
+    background-color: whitesmoke;
+}
+
+.section-two-card   {
+    width: 30%;
+    background-color: white !important;
+    z-index: 5;
+    box-shadow: $box-shadow-card;
+    overflow: auto;
+}
+
+.accomplishment-company-image   {
+    width: 50%;
+    height: 50px;
+}
+
+.company-kaseya {
+    background: url("../images/kaseya.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.company-pega {
+    background: url("../images/pega.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.accomplishment-point div   {
+    font-size: 0.97em;
+    font-weight: 500;
+}
+
+.tag-accomplishment, .tag-technologies   {
+    font-size: 1.25em;
+}

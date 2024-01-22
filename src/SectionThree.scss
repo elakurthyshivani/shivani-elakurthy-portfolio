@@ -1,0 +1,82 @@
+@import "Variables";
+
+#section-three  {
+    background-color: aliceblue !important;
+}
+
+.card-skills, .card-certification   {
+    background-color: white !important;
+    z-index: 5;
+    box-shadow: $box-shadow-card;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+// Skills
+
+.skill-category-heading > div {
+    top: 0px;
+}
+
+.skill-category-heading > div > span    {
+    background-color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 2.5px;
+}
+
+// Certifications
+
+.card-certification {
+    height: 47.5%;
+    width: 47.5%;
+    transition: $transition-secs;
+
+    a {
+        text-decoration: none;
+    }
+
+    .certification-text {
+        color: darkblue;
+    }
+}
+
+.certification_aws  {
+    background: url("../images/aws_certificate.png");
+}
+
+.certification_java  {
+    background: url("../images/java_certificate.png");
+}
+
+.certification_azure  {
+    background: url("../images/azure_certificate.png");
+}
+
+.certification-image    {
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    //width: 16px;
+    //height: 16px;
+}
+
+.certification-text {
+    color: $gray-black;
+    font-weight: bold !important;
+}
+
+.html-attribute-value  {
+    color: $gray-8;
+    font-size: 0.85em;
+    font-weight: 500;
+}
+
+.credly-image   {
+    width: 32px;
+    height: 32px;
+    background-image: url("../images/credly.png");
+    background-position: center;
+    background-size: contain;
+}

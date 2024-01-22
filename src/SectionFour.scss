@@ -1,0 +1,39 @@
+@import "Variables";
+
+#section-four  {
+    background-color: rgb(240, 240, 252);//rgb(253, 246, 236)
+}
+
+.section-four-card   {
+    width: 30%;
+    background-color: white !important;
+    z-index: 5;
+    box-shadow: $box-shadow-card;
+    overflow: auto;
+}
+
+.bg-white-div   {
+    height: 35%;
+    bottom: 0;
+    left: 0;
+    background-color: whitesmoke;
+}
+
+.tag-project-name   {
+    font-size: 1.25em;
+}
+
+.project-points {
+    font-size: 0.97em;
+    font-weight: 500;
+}
+
+ul {
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
+li  {
+    list-style-image: url("../images/bullet-point.svg");
+    padding-left: 8px;
+}
