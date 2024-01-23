@@ -62,15 +62,11 @@
 
 @media screen and (max-width: 992px) {
     #section-one    {
+        height: max-content !important;
+
         .para-value {
             width: 100% !important;
         }
-    }
-}
-
-@media screen and (max-width: 768px) {
-    #section-one    {
-        height: max-content !important;
 
         #photo-container    {
             position: unset !important;
