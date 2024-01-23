@@ -19,7 +19,7 @@ function SectionOne() {
                 </div>
                 <div id="basic-information" className="col-7 h-100 position-absolute pt-5 pb-sm-5 ps-sm-5 pe-sm-5 d-flex flex-column justify-content-center">
                     <div>
-                        <div id="name" className="text-end display-6 pb-lg-3 pe-5">
+                        <div id="name" className="text-end display-6 pb-3 pe-5">
                             <Tag tag="Name" tagClass="tag-name" tagValue="Shivani Elakurthy" />
                         </div>
                         <div className="se-title text-end h6 pe-5">
