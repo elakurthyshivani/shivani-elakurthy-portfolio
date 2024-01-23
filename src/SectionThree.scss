@@ -25,6 +25,37 @@
     padding-top: 2.5px;
 }
 
+@media screen and (max-width: 992px) {
+    #section-three {
+        height: max-content !important;
+
+        #section-skills {
+            margin-top: 20px;
+        }
+
+        #section-certifications {
+            height: max-content !important;
+
+            .card-certification {
+                height: 250px;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card-certification {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #section-three > .round-icon-container {
+        visibility: collapse;
+    }
+}
+
 // Certifications
 
 .card-certification {
@@ -62,6 +93,12 @@
     //height: 16px;
 }
 
+.certification-name-outer   {
+    overflow: hidden !important;
+    overflow-wrap: break-word !important;
+    display: inline-block;
+}
+
 .certification-text {
     color: $gray-black;
     font-weight: bold !important;
@@ -79,4 +116,5 @@
     background-image: url("../images/credly.png");
     background-position: center;
     background-size: contain;
+    background-repeat: no-repeat;
 }

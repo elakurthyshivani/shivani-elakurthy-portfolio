@@ -2,6 +2,11 @@
 
 #section-four  {
     background-color: rgb(240, 240, 252);//rgb(253, 246, 236)
+
+    header, .tag-project-name  {
+        overflow: hidden;
+        overflow-wrap: break-word;
+    }
 }
 
 .section-four-card   {
@@ -9,7 +14,39 @@
     background-color: white !important;
     z-index: 5;
     box-shadow: $box-shadow-card;
-    overflow: auto;
+    overflow-x: hidden;
+}
+
+@media screen and (width: 1200px) {
+    .section-four-card   {
+        margin-left: 10px;
+    }
+
+    #section-four > div  {
+        height: 0% !important;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #section-four {
+        height: max-content !important;
+    }
+
+    .section-four-card   {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .bg-white-div   {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .project-name, #section-four .in-progress   {
+        display: block !important;
+    }
 }
 
 .bg-white-div   {

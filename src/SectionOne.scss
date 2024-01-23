@@ -43,3 +43,57 @@
     color: $gray-black;
     font-size: 0.97em;
 }
+
+@media screen and (max-width: 1200px) {
+    #section-one    {
+        #photo-container    {
+            width: 33.32% !important;
+        }
+
+        #basic-information  {
+            width: 74.97% !important;
+        }
+
+        #photo  {
+            background-position: 40%;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #section-one    {
+        .para-value {
+            width: 100% !important;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #section-one    {
+        height: max-content !important;
+
+        #photo-container    {
+            position: unset !important;
+            width: 100% !important;
+            height: 300px !important;
+        }
+
+        #basic-information  {
+            position: unset !important;
+            width: 100% !important;
+            padding-left: 2rem !important;
+        }
+
+        #photo  {
+            border-top-right-radius: 0px !important;
+            border-bottom-left-radius: 50% !important;
+            background-position: 0% 40%;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #section-one .round-icon-container, #section-one .round-icon    {
+        visibility: collapse;
+    } 
+}

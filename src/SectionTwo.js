@@ -19,13 +19,13 @@ function Card(props) {
                     <div className="d-flex justify-content-center pb-2">
                         <HalfTag tag={props.keyword} tagClass="tag-accomplishment" />
                     </div>
-                    <div className="d-flex justify-content-center pt-1 pb-1">
-                        <div className="col-10">{props.accomplishment}</div>
+                    <div className="d-flex justify-content-center pt-1 pb-1 ps-4 pe-4">
+                        <div className="col-12">{props.accomplishment}</div>
                     </div>
                 </div>
             </div>
-            <div className="pt-5">
-                <div className="d-flex flex-wrap pt-1 pb-2">
+            <div className="pt-1">
+                <div className="d-flex flex-wrap pt-1 pb-2 ps-4 pe-4">
                     { skills.map(skill => <SkillPill skill={skill} key={skill} 
                             skillClass={skillClasses[skills.indexOf(skill)]} />) }
                 </div>
@@ -38,10 +38,10 @@ function SectionTwo() {
 
     return  (
         <section id="section-two" className="w-100 h-100 p-5 position-relative d-flex flex-column">
-            <header className="w-100 display-6 pb-4 ps-5 pe-5">
+            <header className="w-100 display-6 pb-4 ps-sm-5 pe-sm-5">
                 <HalfTag tag="ProfessionalAccomplishments" tagClass="tag-professional-accomplishments" />
             </header>
-            <main id="section-two-body" className="w-100 h-100 d-flex justify-content-between pt-3 ps-5 pe-5 pb-5">
+            <main id="section-two-body" className="w-100 h-100 d-xl-flex flex-xl-row justify-content-between pt-sm-3 ps-sm-5 pe-sm-5 pb-sm-5">
                 <Card company="company-kaseya"
                         keyword="ProductImporter"
                         skills="Azure Functions, Spark, Python"

@@ -13,11 +13,11 @@ function Card(props) {
     return (
         <div className="section-four-card h-100 pt-4 pb-4 d-flex flex-column justify-content-between">
             <div>
-                <div className="d-flex justify-content-center ps-2 pe-2">
+                <div className="project-name d-flex justify-content-center ps-4 pe-4">
                     <HalfTag tag={props.projectName} tagClass="tag-project-name" />
                 </div>
                 {props.inProgress ? 
-                    <div className="in-progress d-flex justify-content-center">
+                    <div className="in-progress d-flex justify-content-center ps-4 pe-4">
                         In progress
                     </div> : <></>}
                 <div className="project-points w-100 pt-3 ps-5 pe-5">
@@ -51,10 +51,10 @@ function SectionFour() {
 
     return  (
         <section id="section-four" className="w-100 h-100 p-5 position-relative d-flex flex-column">
-            <header className="w-100 display-6 pb-4 ps-5 pe-5">
+            <header className="w-100 display-6 pb-4 ps-sm-5 pe-sm-5">
                 <HalfTag tag="PersonalProjects" tagClass="tag-personal-projects" />
             </header>
-            <main id="section-two-body" className="w-100 h-100 d-flex justify-content-between pt-3 ps-5 pe-5 pb-5">
+            <main id="section-four-body" className="w-100 h-100 d-xl-flex flex-xl-row justify-content-between pt-sm-3 ps-sm-5 pe-sm-5 pb-sm-5">
                 <Card projectName="JobListingsDashboard" inProgress={true}
                         projectPoints="I am developing the Job Listings Dashboard to efficiently extract and monitor new job postings from various company career sites.|This script is automated to run every 24 hours, filtering and storing pertinent job listings in the database." 
                         projectURL="https://github.com/elakurthyshivani/job-listings-dashboard"

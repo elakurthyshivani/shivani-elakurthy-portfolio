@@ -9,7 +9,43 @@
     background-color: white !important;
     z-index: 5;
     box-shadow: $box-shadow-card;
-    overflow: auto;
+    overflow-x: hidden;
+}
+
+@media screen and (width: 1200px) {
+    .section-two-card   {
+        margin-left: 10px;
+    }
+
+    #section-two > div  {
+        height: 0% !important;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #section-two {
+        height: max-content !important;
+
+        header, .tag-accomplishment  {
+            overflow: hidden;
+            overflow-wrap: break-word;
+        }
+    }
+
+    .section-two-card   {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .accomplishment-point div   {
+        display: block !important;
+    }
+
+    #section-two .round-icon-container, #section-two .round-icon    {
+        visibility: collapse;
+    }  
 }
 
 .accomplishment-company-image   {

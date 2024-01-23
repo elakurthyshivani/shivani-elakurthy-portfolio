@@ -30,7 +30,7 @@ function SkillCategory(props)   {
 
 function CardSkills(props) {
     return (
-        <div className="card-skills w-100 h-100 pt-4 pb-4 ps-5 pe-5 d-flex flex-column">
+        <div className="card-skills w-100 h-100 pt-3 pb-3 ps-5 pe-5 d-flex flex-column">
             <SkillCategory categoryName="Languages"
                     skills="Python, Java, Go" skillClasses="skill-python, skill-java, skill-go" />
             <SkillCategory categoryName="Frameworks"
@@ -57,13 +57,13 @@ function CardSkills(props) {
 function CardCertification(props)   {
     return (
         <div className="card-certification pt-3 pb-4 ps-4 pe-4 d-flex flex-column justify-content-between position-relative">
-            <div className="pb-3 h-100 ps-5 pe-5">
+            <div className="pb-3 h-100 ps-4 pe-4">
                 <div className={"certification-image w-100 h-100 d-flex flex-wrap " + props.certClass}>
                     &nbsp;
                 </div>
             </div>                
-            <div className="d-flex flex-wrap justify-content-between align-items-center ">
-                <div>
+            <div className="d-flex justify-content-between align-items-center ">
+                <div className="certification-name-outer">
                     <HalfTag tag={props.certName.split(" ").join("")} tagClass="certification-text" />
                 </div>
                 { Object.keys(props).includes("credential") ? 
@@ -71,7 +71,6 @@ function CardCertification(props)   {
                         <a className="round-icon d-flex justify-content-center align-items-center"
                                 data-bs-toggle="tooltip" title={props.tooltip}
                                 href={props.url} target="_blank">
-                            {/* <FontAwesomeIcon icon={faGithub} className="open-credly-link" /> */}
                             <span className="credly-image">&nbsp;</span>
                         </a>
                     </div> :
@@ -82,15 +81,6 @@ function CardCertification(props)   {
                         In progress
                     </div> : 
                     <></> }
-            {/* <div className="pt-3 pb-3 ps-5 pe-5">
-                <div className="round-icon-container d-flex justify-content-end">
-                    <a className="round-icon d-flex justify-content-center align-items-center"
-                            data-bs-toggle="tooltip" title={props.tooltip}
-                            href={props.url} target="_blank">
-                        <FontAwesomeIcon icon={faGithub} className="open-credly-link" />
-                    </a>
-                </div>
-            </div> */}
         </div>
     );
 }
@@ -98,21 +88,21 @@ function CardCertification(props)   {
 function SectionThree() {
 
     return  (
-        <section id="section-three" className="w-100 h-100 p-5 position-relative d-flex">
-            <div className="col-6 h-100 pb-5 ps-5 pe-4">
+        <section id="section-three" className="w-100 h-100 p-5 position-relative d-lg-flex flex-lg-row">
+            <div className="col-lg-6 h-100 pb-5 ps-sm-5 pe-sm-5">
                 <header className="w-100 display-6">
                     <HalfTag tag="Skills" tagClass="tag-skills" />
                 </header>
-                <main id="section-skills" className="w-100 h-100 pt-5 pb-5">
+                <main id="section-skills" className="w-100 h-100 pt-lg-5 pb-lg-5">
                     <CardSkills />
                 </main>
             </div>
-            <div className="col-6 h-100 pb-5 ps-4 pe-5">
+            <div className="col-lg-6 h-100 pb-sm-5 ps-sm-5 pe-sm-5">
                 <header className="w-100 display-6">
                     <HalfTag tag="Certifications" tagClass="tag-certifications" />
                 </header>
-                <main id="section-certifications" className="w-100 h-100 pt-5 pb-5">
-                    <div className="d-flex flex-wrap h-100 justify-content-between align-content-between">
+                <main id="section-certifications" className="w-100 h-100 pt-lg-5 pb-lg-5">
+                    <div className="d-md-flex flex-md-row flex-wrap h-100 justify-content-between align-content-between">
                         <CardCertification certClass="certification_aws"
                                 tooltip="Verify credentials" 
                                 credential="D4MPKN5BGM1111K5"
