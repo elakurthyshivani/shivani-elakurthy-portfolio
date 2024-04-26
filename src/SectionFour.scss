@@ -1,7 +1,9 @@
 @import "Variables";
 
 #section-four  {
-    background-color: rgb(240, 240, 252);//rgb(253, 246, 236)
+    background-color: rgb(240, 240, 252);
+    min-height: 100%;
+    height: max-content !important;
 
     header, .tag-project-name  {
         overflow: hidden;
@@ -60,11 +62,6 @@
     font-size: 1.25em;
 }
 
-.project-points {
-    font-size: 0.97em;
-    font-weight: 500;
-}
-
 ul {
     padding-bottom: 0;
     padding-left: 0;
@@ -73,4 +70,30 @@ ul {
 li  {
     list-style-image: url("../images/bullet-point.svg");
     padding-left: 8px;
+}
+
+#section-four {
+    header.section-header   {
+        color: purple !important;
+    }
+
+    .card-title .card-title-icon {
+        background: darkviolet !important;
+    }
+
+    .card-title .card-title-value {
+        color: darkviolet !important;
+    }
+
+    .round-icon {
+        background-color: darkviolet !important;
+
+        svg {
+            color: white !important;
+        }
+    }
+
+    .round-icon-container:hover .round-icon {
+        background-color: purple !important;
+    }
 }

@@ -4,10 +4,7 @@
 #section-one {
     background-color: navajowhite;
     color: whitesmoke;
-}
-
-.scroll-to-icon {
-    color:white !important;
+    overflow-x: hidden;
 }
 
 #photo-container    {
@@ -32,16 +29,25 @@
 
 #name   {
     color: $primary-hover-color;
-    font-family: 'Pacifico';
+    font-family: 'Pacifico', cursive;
 }
 
 .se-title  {
     color: $gray-5;
 }
 
-.para-value    {
-    color: $gray-black;
-    font-size: 0.97em;
+#section-one    {
+    .card-title .card-title-icon   {
+        background: darkgoldenrod !important;
+    }
+
+    .card-title .card-title-value   {
+        color: darkgoldenrod !important;
+    }
+
+    hr  {
+        color: #888888;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -81,15 +87,22 @@
         }
 
         #photo  {
-            border-top-right-radius: 0px !important;
+            border-top-right-radius: 0 !important;
             border-bottom-left-radius: 50% !important;
-            background-position: 0% 40%;
+            background-position: 0 40%;
         }
     }
 }
 
 @media screen and (max-width: 576px) {
-    #section-one .round-icon-container, #section-one .round-icon    {
-        visibility: collapse;
-    } 
+    #section-one {
+
+        #photo  {
+            background-position: 50% 40%;
+        }
+
+        #basic-information  {
+            padding-left: 1rem !important;
+        }
+    }
 }

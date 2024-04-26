@@ -25,6 +25,17 @@ code {
     padding: 0;
 }
 
+.text-overflow-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.project-points {
+    font-size: 0.97em;
+    font-weight: 500;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -35,14 +46,20 @@ code {
 
 ::-webkit-scrollbar-thumb {
     border-radius: $border-radius;
-    background-color: #c13248;//skyblue;
+    background-color: $gray-5;//#c13248;//skyblue;
     transition: $transition-secs !important;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #9c2c3d;//deepskyblue; 
+    background-color: $gray-8;//#9c2c3d;//deepskyblue;
 }
 
 div#root    {
     z-index: 2;
+}
+
+@media screen and (max-height: 700px) {
+    *   {
+        font-size: 12px;
+    }
 }

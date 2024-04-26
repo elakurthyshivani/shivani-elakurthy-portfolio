@@ -2,6 +2,8 @@
 
 #section-three  {
     background-color: aliceblue !important;
+    min-height: 100%;
+    height: max-content !important;
 }
 
 .card-skills, .card-certification   {
@@ -25,41 +27,9 @@
     padding-top: 2.5px;
 }
 
-@media screen and (max-width: 992px) {
-    #section-three {
-        height: max-content !important;
-
-        #section-skills {
-            margin-top: 20px;
-        }
-
-        #section-certifications {
-            height: max-content !important;
-
-            .card-certification {
-                height: 250px;
-                margin-top: 20px;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .card-certification {
-        width: 100% !important;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    #section-three > .round-icon-container {
-        visibility: collapse;
-    }
-}
-
 // Certifications
 
 .card-certification {
-    height: 47.5%;
     width: 47.5%;
     transition: $transition-secs;
 
@@ -89,8 +59,8 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    //width: 16px;
-    //height: 16px;
+    width: 128px;
+    height: 128px;
 }
 
 .certification-name-outer   {
@@ -104,12 +74,6 @@
     font-weight: bold !important;
 }
 
-.html-attribute-value  {
-    color: $gray-8;
-    font-size: 0.85em;
-    font-weight: 500;
-}
-
 .credly-image   {
     width: 32px;
     height: 32px;
@@ -117,4 +81,57 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+// Colors
+
+#section-three {
+    header.section-header   {
+        color: goldenrod !important;
+    }
+
+    #section-skills {
+        .card-title .card-title-icon {
+            background: $blue !important;
+        }
+
+        .card-title .card-title-value {
+            color: $blue !important;
+        }
+    }
+
+    #section-certifications {
+        .card-title .card-title-icon {
+            background: indianred !important;
+        }
+
+        .card-title .card-title-value {
+            color: indianred !important;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #section-three {
+
+        #section-certifications {
+            height: max-content !important;
+
+            .card-certification {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card-certification {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #section-three > .round-icon-container {
+        visibility: collapse;
+    }
 }

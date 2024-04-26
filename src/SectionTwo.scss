@@ -1,15 +1,56 @@
 @import "Variables";
+@import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap");
 
 #section-two    {
     background-color: whitesmoke;
+    min-height: 100%;
 }
 
 .section-two-card   {
-    width: 30%;
+    width: 32%;
     background-color: white !important;
     z-index: 5;
     box-shadow: $box-shadow-card;
     overflow-x: hidden;
+}
+
+.accomplishment-company-image   {
+    height: 25px;
+}
+
+.company-kaseya {
+    width: 150px;
+    background: url("../images/kaseya.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.company-pega {
+    width: 90px;
+    background: url("../images/pega.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.accomplishment-point div   {
+    font-size: 0.97em;
+    font-weight: 500;
+}
+
+.tag-accomplishment, .tag-technologies   {
+    font-size: 1.25em;
+}
+
+#section-two {
+    .card-title .card-title-icon {
+        background: seagreen !important;
+    }
+
+    .card-title .card-title-value {
+        color: seagreen !important;
+    }
 }
 
 @media screen and (width: 1200px) {
@@ -46,32 +87,4 @@
     #section-two .round-icon-container, #section-two .round-icon    {
         visibility: collapse;
     }  
-}
-
-.accomplishment-company-image   {
-    width: 50%;
-    height: 50px;
-}
-
-.company-kaseya {
-    background: url("../images/kaseya.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.company-pega {
-    background: url("../images/pega.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.accomplishment-point div   {
-    font-size: 0.97em;
-    font-weight: 500;
-}
-
-.tag-accomplishment, .tag-technologies   {
-    font-size: 1.25em;
 }

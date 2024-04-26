@@ -1,78 +1,31 @@
 @import "Variables";
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap");
 
-// Tags
-
-.html-tag, .html-tag-name   {
-    font-family: $code-font;
-    font-size: 1.1em;
-    font-weight: bold;
-    color: rgb(26, 124, 223);
-}
-
-.tag-name  {
-    color: darkgoldenrod;
-    font-size: 1.2em;
-    font-weight: 200 !important;
-}
-
-.tag-current-role   {
-    color: mediumblue;
-}
-
-.tag-highest-degree, .tag-project-name {
-    color: blueviolet;
-}
-
-.tag-next-section   {
-    color: darkcyan;
-}
-
-.tag-about-me   {
-    color: deeppink;
-}
-
-.tag-professional-accomplishments, .tag-skills, .tag-certifications, 
-.tag-personal-projects   {
-    color: darkcyan;
-}
-
-.tag-accomplishment {
-    color: goldenrod;//mediumblue;
-}
-
-.tag-technologies, .tag-skill-category   {
-    color: lightcoral;//darkslateblue;//royalblue;
-}
-
-.html-attribute {
-    font-size: 0.9em;
-}
-
-.html-attribute-value  {
-    color: $gray-8;
-    font-size: 0.9em;
-    font-weight: 500;
-}
 
 // Buttons
 
 .basic-button {
     background-color: $primary-color;
     align-items: center;
-    padding: 3% 4%;
-    border-radius: $border-radius;
+    padding: 3% 3%;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
     box-shadow: $buttons-box-shadow;
     z-index: 4;
     cursor: pointer;
     transition: $transition-secs;
 
     a, button    {
-        color: $ternary-color;
+        color: $ternary-color !important;
         text-decoration: none;
         font-family: $code-font;
-        // font-size: 0.9em;
         font-weight: bold;
+
+        svg {
+            font-size: 1.25em;
+        }
     }
 
     &:hover  {
@@ -88,48 +41,9 @@
 
 .basic-button button {
     background: none;
-    border: 0px;
+    border: 0;
 }
 
-// Scroll To Icon
-
-.round-icon-container   {
-    display: inline-block;
-    cursor: pointer;
-    // bottom: 0px;
-    // right: 0px;
-}
-
-.round-icon  {
-    display: inline-block;
-    bottom: 48px;
-    right: 48px;
-    z-index: 5;
-    padding: 10px;
-    background-color: $primary-color;
-    box-shadow: $buttons-box-shadow;
-    border-radius: 50%;
-    width: 48px;
-    height: 48px;
-    transition: $transition-secs;
-
-    svg {
-        color: $ternary-color !important;
-    }
-}
-
-.round-icon-container:hover {
-
-    .round-icon {
-        transform: $buttons-scale;
-        background-color: $primary-hover-color;
-        box-shadow: $buttons-hover-box-shadow;
-        
-        svg {
-            color: $secondary-color !important;
-        }
-    }
-}
 
 // Skills
 
@@ -151,6 +65,10 @@
 
 .skill-amazon-dynamodb {
     background: url("../images/amazon_dynamo_db.png");
+}
+
+.skill-angular  {
+    background: url("../images/angular.png");
 }
 
 .skill-aws {
@@ -185,6 +103,10 @@
     background: url("../images/docker.png");
 }
 
+.skill-fast-api {
+    background: url("../images/fast_api.png");
+}
+
 .skill-flask    {
     background: url("../images/flask.png");
 }
@@ -195,6 +117,14 @@
 
 .skill-git {
     background: url("../images/git.png");
+}
+
+.skill-github   {
+    background: url("../images/github.png");
+}
+
+.skill-github-actions   {
+    background: url("../images/github_actions.png");
 }
 
 .skill-go   {
@@ -243,7 +173,11 @@
 
 .skill-react    {
     background: url("../images/react.png");
-} 
+}
+
+.skill-sass {
+    background: url("../images/sass.png");
+}
 
 .skill-selenium {
     background: url("../images/selenium.png");
@@ -266,10 +200,112 @@
     height: 16px;
 }
 
+
 // In-progress text
 
 .in-progress  {
     color: $gray-8;
     font-size: 0.85em;
     font-weight: 500;
+}
+
+
+// Round icons
+
+.round-icon  {
+    display: inline-block;
+    bottom: 48px;
+    right: 48px;
+    z-index: 5;
+    padding: 10px;
+    background-color: $primary-color;
+    box-shadow: $buttons-box-shadow;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    transition: $transition-secs;
+
+    svg {
+        color: $ternary-color !important;
+    }
+}
+
+.round-icon-container:hover {
+
+    .round-icon {
+        transform: $buttons-scale;
+        background-color: $primary-hover-color;
+        box-shadow: $buttons-hover-box-shadow;
+
+        svg {
+            color: $secondary-color !important;
+        }
+    }
+}
+
+
+// Section header
+
+header.section-header   {
+    font-family: "Kode Mono", monospace;
+    font-weight: 700;
+    color: $blue;
+
+    .first-word   {
+        border: 2.5px solid $gray-5;
+    }
+
+    .next-word  {
+        border-bottom: 2.5px solid $gray-5;
+    }
+}
+
+@media screen and (max-width: 290px) {
+    header.section-header .next-word   {
+        line-height: 2;
+    }
+
+    header.section-header .first-word   {
+        line-height: 2.5;
+        word-wrap: break-word;
+    }
+}
+
+
+// Card title
+
+.card-title {
+    font-family: "Kode Mono", monospace !important;
+
+    .card-title-icon    {
+        border-radius: $border-radius;
+        background: goldenrod;
+        font-weight: 700;
+        color: white;
+        width: 22px;
+        height: 22px;
+    }
+
+    .card-title-value {
+        color: darkgoldenrod;
+        font-weight: 600;
+    }
+}
+
+@keyframes blinkKey {
+    0%, 75%, 100%  {
+        //color: transparent;
+        display: none;
+    }
+    25%, 50% {
+        //color:red;
+        display: inline;
+    }
+}
+
+.blink-key  {
+    animation-name: blinkKey;
+    animation-duration: 160ms;
+    animation-iteration-count: infinite;
+    color: $gray-black;
 }
