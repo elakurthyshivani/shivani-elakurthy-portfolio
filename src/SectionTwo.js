@@ -47,8 +47,8 @@ function SectionTwo() {
                         skillClasses="skill-azure-functions, skill-spark, skill-python, skill-azure-sql"
                         accomplishment="I have worked on re-developing and optimizing the Product Importer application by incorporating Spark SQL in Azure Functions using Python, thereby improving the efficiency of data processing of the products from the feed by 20%." />
                 <Card company="company-kaseya"
-                        keyword="support-portal"
-                        tooltip="Support Portal"
+                        keyword="commerce's-support-portal"
+                        tooltip="Commerce's Support Portal"
                         skills="Go, Azure SQL, jQuery"
                         skillClasses="skill-go, skill-azure-sql, skill-jquery"
                         accomplishment="I have developed the Support Portal with multiple features using Go, resolving recurring support requests with a single click.|This resulted in a reduction in the sustaining time of the Support Engineers by 50%." />
